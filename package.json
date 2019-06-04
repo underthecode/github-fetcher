@@ -1,0 +1,20 @@
+{
+  "name": "github-fetcher",
+  "version": "1.0.0",
+  "description": "full stack app that retrieves GitHub API data, stores in database && renders on client",
+  "main": "./client/index.jsx",
+  "scripts": {
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underthecode/github-fetcher.git"
+  },
+  "author": "underthecode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/underthecode/github-fetcher/issues"
+  },
+  "homepage": "https://github.com/underthecode/github-fetcher#readme"
+}
