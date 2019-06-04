@@ -9,5 +9,5 @@ app.get('/repos', function(req, res) {});
 
 const PORT = process.env.PORT || 1128;
 app.listen(PORT, function() {
-  console.log(`Github Fetcher is listening on ${PORT}`);
+  console.log(`GitHub Fetcher is listening on ${PORT}`);
 });
