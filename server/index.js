@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const helpers = require('./helpers/github');
+const db = require('../database/index');
 
 let app = express();
 
@@ -19,8 +20,8 @@ app.post('/repos', function(req, res) {
     if (err) {
       throw err;
     } else {
+      db.save(data);
       // post GitHub API data to database
-      // console.log(data)
     }
   });
   res.sendStatus(201);
