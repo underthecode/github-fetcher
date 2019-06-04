@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "full stack app that retrieves GitHub API data, stores in database && renders on client",
   "main": "./client/index.jsx",
+  "engines": {
+    "node": "12.3.1",
+    "npm": "6.9.0"
+  },
   "scripts": {
-    "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js"
+    "start:dev": "nodemon server/index.js",
+    "build:dev": "webpack -d --watch",
+    "dev": "concurrently \"npm run start:dev\" \"npm run build:dev\"",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +25,11 @@
   "homepage": "https://github.com/underthecode/github-fetcher#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "mongoose": "^5.5.12",
+    "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "request": "^2.88.0"
@@ -32,6 +40,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.32.2"
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }
