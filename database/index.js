@@ -14,8 +14,9 @@ mongoose
   });
 
 let repoSchema = new mongoose.Schema({
+  repo_user: String,
   repo_id: { type: Number, unique: true, required: true },
-  repo_full_name: String,
+  repo_name: String,
   repo_html_url: String,
   repo_description: String,
   repo_stargazers_count: Number
@@ -32,9 +33,10 @@ let save = data => {
   // construct a document for each `repo`
   data.forEach(repo => {
     const addRepo = new Repo({
+      repo_user: repo.owner.login,
       repo_id: repo.id,
-      repo_full_name: repo.full_name,
-      repo_html_url: repo.hthml_url,
+      repo_name: repo.name,
+      repo_html_url: repo.html_url,
       repo_description: repo.description,
       repo_stargazers_count: repo.stargazers_count
     });

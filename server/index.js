@@ -31,7 +31,7 @@ app.get('/repos', (req, res) => {
     if (err) {
       throw err;
     } else {
-      res.sendStatus(200);
+      res.status(200).send(data);
     }
   });
 });

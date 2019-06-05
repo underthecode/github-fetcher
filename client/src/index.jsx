@@ -12,10 +12,16 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    $.get('/repos', data => {
+      this.setState({ repos: data });
+    });
+  }
+
   search(term) {
     console.log(`${term} was searched`);
-    $.post('/repos', { user: term }, data => {
-      console.log(data);
+    $.post('/repos', { user: term }, () => {
+      this.componentDidMount();
     });
   }
 
@@ -23,8 +29,8 @@ class App extends React.Component {
     return (
       <div>
         <h1>Github Fetcher</h1>
-        <RepoList repos={this.state.repos} />
         <Search onSearch={this.search.bind(this)} />
+        <RepoList repos={this.state.repos} />
       </div>
     );
   }
