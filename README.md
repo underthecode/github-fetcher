@@ -15,7 +15,9 @@
 ## diagrams
 
 #### app overview:
-![app overview](https://github.com/underthecode/github-fetcher/blob/master/app%20overview.png "app overview")
+
+![app overview](https://github.com/underthecode/github-fetcher/blob/master/diagrams/app%20overview.png 'app overview')
 
 #### database schema:
-![database schema](https://github.com/underthecode/github-fetcher/blob/master/database%20schema.png "database schema")
+
+![database schema](https://github.com/underthecode/github-fetcher/blob/master/diagrams/database%20schema.png 'database schema')
