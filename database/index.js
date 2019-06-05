@@ -37,7 +37,7 @@ let save = data => {
   data.forEach(repo => {
     const addRepo = new Repo({
       repo_user: repo.owner.login,
-      repo_user_url: repo.owner.url,
+      repo_user_url: repo.owner.html_url,
       repo_id: repo.id,
       repo_name: repo.name,
       repo_html_url: repo.html_url,
