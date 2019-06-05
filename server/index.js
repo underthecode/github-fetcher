@@ -14,22 +14,22 @@ app.use(
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-app.post('/repos', function(req, res) {
+app.post('/repos', (req, res) => {
   const user = req.body.user;
   helpers.getReposByUsername(user, (err, data) => {
     if (err) {
       throw err;
     } else {
-      db.save(data);
       // post GitHub API data to database
+      db.save(data);
+      res.sendStatus(201);
     }
   });
-  res.sendStatus(201);
 });
 
-app.get('/repos', function(req, res) {});
+app.get('/repos', (req, res) => {});
 
 const PORT = process.env.PORT || 1128;
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log(`GitHub Fetcher is listening on ${PORT}`);
 });
