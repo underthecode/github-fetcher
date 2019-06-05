@@ -15,7 +15,7 @@
 ## diagrams
 
 #### app overview:
-![app overview](https://github.com/underthecode/github-fetcher/blob/master/fullstack-review%20%3E%20OVERVIEW.png "app overview")
+![app overview](https://github.com/underthecode/github-fetcher/blob/master/app%20overview.png "app overview")
 
 #### database schema:
-![database schema](https://github.com/underthecode/github-fetcher/blob/master/fullstack-review%20%3E%20SCHEMA.png "database schema")
+![database schema](https://github.com/underthecode/github-fetcher/blob/master/database%20schema.png "database schema")
