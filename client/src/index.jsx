@@ -28,7 +28,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Github Fetcher</h1>
+        <h1>GitHub Fetcher</h1>
         <Search onSearch={this.search.bind(this)} />
         <RepoList repos={this.state.repos} />
       </div>
