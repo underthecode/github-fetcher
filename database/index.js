@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+const keys = require('../server/config/keys');
+
 mongoose
-  .connect('mongodb://localhost/fetcher', {
+  .connect(keys.mongoURI, {
     useCreateIndex: true,
     useNewUrlParser: true
   })

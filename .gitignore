@@ -1,5 +1,5 @@
 node_modules
-server/config/config.js
+server/config/dev.js
 client/dist/bundle.js
 .vscode/
 npm-debug.log
