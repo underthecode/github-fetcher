@@ -50,4 +50,17 @@ let save = data => {
   });
 };
 
-module.exports = { save };
+let get = callback => {
+  const query = Repo.find({})
+    .sort('-repo_stargazers_count')
+    .limit(25);
+  query.exec((err, data) => {
+    if (err) {
+      throw err;
+    } else {
+      callback(null, data);
+    }
+  });
+};
+
+module.exports = { save, get };

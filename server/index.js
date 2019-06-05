@@ -20,14 +20,21 @@ app.post('/repos', (req, res) => {
     if (err) {
       throw err;
     } else {
-      // post GitHub API data to database
       db.save(data);
       res.sendStatus(201);
     }
   });
 });
 
-app.get('/repos', (req, res) => {});
+app.get('/repos', (req, res) => {
+  db.get((err, data) => {
+    if (err) {
+      throw err;
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
 
 const PORT = process.env.PORT || 1128;
 app.listen(PORT, () => {
