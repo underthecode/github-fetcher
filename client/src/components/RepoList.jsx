@@ -11,11 +11,14 @@ class RepoList extends React.Component {
     const repos = this.props.repos;
     const reposList = repos.map(repo => (
       <ul key={repo.repo_id}>
-        <b>Repo: {repo.repo_id}</b>
-        <li>User: {repo.repo_user}</li>
-        <li>Name: {repo.repo_name}</li>
-        <li>Description: {repo.repo_description}</li>
-        <li>URL: {repo.repo_html_url}</li>
+        <b>Repo {repo.repo_id}</b>
+        <li>
+          User: <a href={repo.repo_user_url}>{repo.repo_user}</a>
+        </li>
+        <li>
+          Name: <a href={repo.repo_html_url}>{repo.repo_name}</a>
+        </li>
+        <li>Desc: {repo.repo_description}</li>
         <li>Stars: {repo.repo_stargazers_count}</li>
       </ul>
     ));
