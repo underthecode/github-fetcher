@@ -48,7 +48,11 @@ let save = data => {
     // save each document to database
     addRepo.save((err, data) => {
       if (err) {
-        throw err;
+        // a developer has full control how errs are handled
+        // throw err stops the process
+        // and that is not expected behavior
+        // instead logging that duplicate exists is better practice
+        console.log(`This a duplicate doucment`);
       } else {
         console.log(`${data} was saved to the database`);
       }
