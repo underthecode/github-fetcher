@@ -8,7 +8,7 @@
 
 #### a full stack app that retrieves GitHub API data, stores in database && renders on client, where:
 
-- client rendersTop 25 GitHub repos in database sorted by Stars
+- client renders Top 25 GitHub repos in database sorted by Stars
 - React.js code bundles with Webpack
 - Express serves up the app && handles API requests
 - MongoDB stores GitHub API fetched data
