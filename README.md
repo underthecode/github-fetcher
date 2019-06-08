@@ -2,7 +2,7 @@
 
 ## try it out!
 
-- fetch && add GitHub Repos to database [here](https://underthecode-github-fetcher.herokuapp.com/) :smiley:
+- fetch && add GitHub repos to database [here](https://underthecode-github-fetcher.herokuapp.com/) :smiley:
 
 ## requirements
 
