@@ -2,13 +2,14 @@
 
 ## try it out!
 
-- fetch GitHub Repos [here](https://underthecode-github-fetcher.herokuapp.com/) :smiley:
+- fetch && add GitHub Repos to database [here](https://underthecode-github-fetcher.herokuapp.com/) :smiley:
 
 ## requirements
 
 #### a full stack app that retrieves GitHub API data, stores in database && renders on client, where:
 
-- React.js renders all views && bundles with Webpack
+- client rendersTop 25 GitHub repos in database sorted by Stars
+- React.js code bundles with Webpack
 - Express serves up the app && handles API requests
 - MongoDB stores GitHub API fetched data
 
