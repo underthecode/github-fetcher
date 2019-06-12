@@ -1,7 +1,7 @@
 {
   "name": "github-fetcher",
   "version": "1.0.0",
-  "description": "full stack app that retrieves GitHub API data, stores in database && renders on client",
+  "description": "single-page app that fetches GitHub users and adds repos to database",
   "main": "./client/index.jsx",
   "engines": {
     "node": "12.4.0",

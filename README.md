@@ -6,7 +6,7 @@
 
 ## requirements
 
-#### a full stack app that retrieves GitHub API data, stores in database && renders on client, where:
+#### a single-page app that fetches GitHub users and adds repos to database, where:
 
 - view displays Top 25 repos in database sorted by Stars
 - React.js code bundles with Webpack
