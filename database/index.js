@@ -4,7 +4,8 @@ const keys = require('../server/config/keys');
 mongoose
   .connect(keys.mongoURI, {
     useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   })
   .then(() => {
     console.log(`GitHub Fetcher is connected to database`),
