@@ -31,7 +31,6 @@
     "jquery": "^3.5.1",
     "mongoose": "^5.9.27",
     "nodemon": "^2.0.4",
-    "npm-check-updates": "^7.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "request": "^2.88.2"
