@@ -38,5 +38,5 @@ app.get('/repos', (req, res) => {
 
 const PORT = process.env.PORT || 1128;
 app.listen(PORT, () => {
-  console.log(`GitHub Fetcher is listening on ${PORT}`);
+  console.log(`Listening on http://localhost:${PORT}`);
 });
