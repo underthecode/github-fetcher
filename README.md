@@ -6,7 +6,7 @@
 
 ## requirements
 
-#### a single-page app that fetches GitHub users and adds repos to database, where:
+#### retrieves GitHub users and records their repos in a database, where:
 
 - view displays Top 25 repos in database sorted by Stars
 - React.js code bundles with Webpack
